@@ -34,7 +34,11 @@ There are several tools you can install on Termux, though they were catching som
 
 Now if you want to connect to your computer back at home and proxy tools through your BeamPro you'll need to pkg install microsocks which is a really cool project that's a socks5 server in a binary.  No config file needed. https://github.com/rofl0r/microsocks
 
-If you want to forward prots through back to your desktop at home you'll need socat to do that, and if those ports are lower than port 1024 you'll need to root your Beampro.
+If you want to forward prots through back to your desktop at home you'll need to be rooted, and have socat and tsu installed to do that.
+
+Once you have socat and tsu installed you'll need to enable ip routing on the BeamPro, do this by running `sudo sysctl -w net.ipv4.ip_forward=1`
+
+Then you can port forward to any ip using `socat TCP-LISTEN:PORT-WANT-FORWARD,fork TCP:IP-TO-FORWARD-TO:PORT-ITS-LISTENING-ON`
 
 You can install metasploit, but its not in the official repos, here's a github for a quick and dirty install https://github.com/gushmazuko/metasploit_in_termux
 
