@@ -16,7 +16,7 @@ Note while its possible to do MOST things on android that you would normally do 
 
 For starters you'll want to install the Fdroid App store (https://f-droid.org/) on the BeamPro. The primary app we'll be using to get things setup is Termux, and the best place to get that is on fdroid. Install Termux (and optionally termux:boot, and termuc:API if you want to run things at boot and using the android API).
 
-Once you have Termux installed be sure to open it and run the commend `termux-change-repo` and select "Mirror groRotate BetweeN...."
+Once you have Termux installed be sure to open it and run the commend `termux-change-repo` and select "Mirror group Rotate Between..."
 
 IMAGE
 
@@ -24,7 +24,7 @@ Select the region closest to yourself using the arrow keys, then hit enter.
 
 IMAGE
 
-once that is finsihed run `pkg updtae && pkg upgrade`
+once that is finsihed run `pkg update && pkg upgrade`
 
 let the update finish then set up your terminal how you like it.  Personally I installed fish and used chsh to set it as my shell.
 
